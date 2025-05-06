@@ -1,0 +1,58 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    在北部海域，水手们说他们曾看到幽灵船在海面上巡逻。看到幽灵船后，大家都看不到其他船只了。这就产生了一个问题：在如此浓雾中，他们如何区分正常船只和幽灵船呢？我们可以使用定位程序来解决这个问题。
+</p>
+
+<p style="text-align: justify;">
+    对于正常船只来说，反射信号的持续时间是相同的。因此，您需要等待三个信号，如果它们的持续时间相同，那么我们就安全了，因为这艘船是正常的。如果你发现有任何不同，我们最好逃跑，因为那就是幽灵船。
+</p>
+
+<p style="text-align: justify;">
+    我们来看几个例子：<br>
+    - 定位器上的数字是 21。它的二进制形式是 "10101"，我们看到 3 个信号，每个信号持续 1 秒钟。这是一艘正常的飞船。<br>
+    - 数字是 1587。二进制形式为 "11000110011"，我们可以看到 3 个持续时间为 2 秒的信号，但有不同程度的停顿。没关系。<br>
+    - 数字是 3687。二进制形式为 "111001100111"，我们看到 3 个信号。两个信号持续 3 秒，一个持续 2 秒。逃跑是个好主意。
+</p>
+
+<p style="text-align: justify;">
+    对于这项挑战，我们还有一个建议。这是一项代码高尔夫任务，您的主要目标是尽可能缩短代码（200 是绝对上限，越少越好）。 
+</p>
+
+<!-- <p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 83px"/>
+</p> -->
+
+<!-- Explain input and output values -->
+<p>
+   <strong>输入：</strong>一个整数 <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>输出：</strong>是否为普通船舶的逻辑值 <span>(bool{% if is_js %}ean{% endif %})</span>. 
+</p>
+
+
+<p>
+    <strong>举例说明：</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<p class="for_info_only">
+
+    <strong>如何使用：</strong>
+    <i>这是一个在文本和离散信号中进行简单模式识别的示例。</i>
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>前提条件：</strong>
+    <ul>
+    <li><i>21 &le; 数字 &le; 1057222719</i>；</li>
+    <li><i>每次测试只有三个信号。</i></li>
+    </ul>
+</p>
