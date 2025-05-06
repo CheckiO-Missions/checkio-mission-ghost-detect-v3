@@ -1,0 +1,58 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    Dans les eaux septentrionales, les marins disent qu'ils ont vu un bateau fantôme patrouiller dans les eaux. Personne ne peut voir les autres navires après avoir vu le vaisseau fantôme. Cela pose un problème: comment distinguer un navire normal du navire fantôme dans un brouillard aussi dense? Nous pouvons utiliser un programme de localisation pour résoudre ce problème.
+</p>
+
+<p style="text-align: justify;">
+    Pour un navire normal, les signaux réfléchis ont la même durée. Vous attendez donc trois signaux et s'ils ont la même durée, nous sommes en sécurité car le navire est normal. Si vous voyez une différence, nous ferions mieux de nous enfuir, car c'est le vaisseau fantôme.
+</p>
+
+<p style="text-align: justify;">
+    Prenons quelques exemples:<br>
+    - Le numéro du localisateur est 21. C'est "10101" en binaire et nous voyons 3 signaux d'une durée d'une seconde chacun. Il s'agit d'un navire normal.<br>
+    - Le numéro est 1587. La forme binaire est "11000110011" et nous voyons 3 signaux d'une durée de 2 secondes mais avec différentes pauses. C'est bon.<br>
+    - Le numéro est 3687. La forme binaire est "111001100111" et nous voyons 3 signaux. Deux signaux d'une durée de 3 secondes et un signal d'une durée de 2 secondes. C'est une bonne idée de s'enfuir.
+</p>
+
+<p style="text-align: justify;">
+    Nous avons une autre suggestion pour ce défi. Il s'agit d'une mission de golf codé et votre objectif principal est de rendre votre code aussi court que possible (200 est le maximum absolu, moins il y en a, mieux c'est). 
+</p>
+
+<!-- <p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 83px"/>
+</p> -->
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Entrée:</strong> Un entier <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Sortie:</strong> S'agit-il d'un navire normal ou non en tant que valeur logique? <span>(bool{% if is_js %}ean{% endif %})</span>. 
+</p>
+
+
+<p>
+    <strong>Exemples:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<p class="for_info_only">
+
+    <strong>Comment l'utiliser:</strong>
+    <i>Il s'agit d'un exemple de reconnaissance de formes simples dans un texte et de signaux discrets.</i>
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>Conditions préalables:</strong>
+    <ul>
+    <li><i>21 &le; nombre &le; 1057222719;</i></li>
+    <li><i>Il n'y a que trois signaux dans chaque test.</i></li>
+    </ul>
+</p>
