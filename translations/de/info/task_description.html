@@ -1,0 +1,58 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    In den nördlichen Gewässern sagen Seeleute, sie hätten ein Geisterschiff gesehen, das in den Gewässern patrouilliert. Niemand kann die anderen Schiffe sehen, nachdem sie das Geisterschiff gesehen haben. Daraus ergibt sich ein Problem: Wie können sie bei so dichtem Nebel ein normales Schiff von dem Geisterschiff unterscheiden? Hierfür können wir ein Ortungsprogramm verwenden.
+</p>
+
+<p style="text-align: justify;">
+    Für ein normales Schiff haben die reflektierten Signale die gleiche Dauer. Sie warten also auf drei Signale und wenn sie die gleiche Dauer haben, dann sind wir sicher, denn das Schiff ist normal. Wenn Sie einen Unterschied feststellen - sollten wir besser weglaufen, denn das ist das Geisterschiff.
+</p>
+
+<p style="text-align: justify;">
+    Schauen wir uns einige Beispiele an:<br>
+    - Die Nummer auf dem Ortungsgerät ist 21. Es ist "10101" in binärer Form und wir sehen 3 Signale mit jeweils 1 Sekunde Dauer. Dies ist ein normales Schiff.<br>
+    - Die Nummer ist 1587. Die binäre Form ist "11000110011" und wir sehen 3 Signale mit einer Dauer von 2 Sekunden, aber mit verschiedenen Pausen. Das ist in Ordnung.<br>
+    - Die Nummer ist 3687. Die binäre Form - "111001100111" und wir sehen 3 Signale. Zwei Signale mit einer Dauer von 3 Sekunden und eines mit 2 Sekunden. Es ist eine gute Idee, wegzulaufen.
+</p>
+
+<p style="text-align: justify;">
+    Wir haben einen weiteren Vorschlag für diese Herausforderung. Dies ist eine Code-Golf-Mission und Ihr Hauptziel ist es, Ihren Code so kurz wie möglich zu machen (200 ist das absolute Maximum, je weniger - desto besser). 
+</p>
+
+<!-- <p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 83px"/>
+</p> -->
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Eingabe:</strong> Eine ganze Zahl <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Ausgabe:</strong> Ist es ein normales Schiff oder nicht als logischer Wert <span>(bool{% if is_js %}ean{% endif %})</span>. 
+</p>
+
+
+<p>
+    <strong>Beispiele:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<p class="for_info_only">
+
+    <strong>Wie es verwendet wird:</strong>
+    <i>Dies ist ein Beispiel für die einfache Mustererkennung in Text und diskreten Signalen.</i>
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>Vorbedingungen:</strong>
+    <ul>
+    <li><i>21 &le; Zahl &le; 1057222719;</i></li>
+    <li><i>In jedem Test gibt es nur drei Signale.</i></li>
+    </ul>
+</p>
